@@ -1,12 +1,260 @@
-/* 
-ID & Name : 223103995 - Muhamed Nader Elbokl
-course : CSE211 Web programming
-Assignment : course project
-date : 30/12/2025
-description : the purpose if this styling.css file is to style the pages in course project
+/* =========================================================
+  ID & Name: Your ID & Name
+  Course: CSE211 Web Programming
+  Assignment: Course Project
+  Date: 01/01/2026
+  Description: Blue Gradient Theme CSS for EventsX
+========================================================= */
 
+/* ===== RESET & BASE ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  line-height: 1.6;
+  background: #e6f0ff; /* light blue background */
+  color: #0a1f44;
+}
 
+a {
+  text-decoration: none;
+  color: #0a3d91; /* dark blue */
+  transition: 0.3s;
+}
 
+a:hover {
+  color: #1e60d7; /* brighter blue */
+}
 
-*/
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1); /* dark blue to lighter blue */
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 0 0 20px 20px;
+}
+
+header .logo h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+#main-navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#main-navigation ul li a {
+  font-weight: 600;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+#main-navigation ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== BREADCRUMB ===== */
+.breadcrumb {
+  padding: 0.5rem 2rem;
+  font-size: 0.9rem;
+  background-color: #cce0ff; /* soft blue */
+  border-radius: 10px;
+  margin: 1rem 0;
+}
+
+.breadcrumb a {
+  color: #0a3d91;
+}
+
+/* ===== MAIN ===== */
+main {
+  padding: 2rem;
+}
+
+/* ===== UPCOMING EVENTS / EVENT CARDS ===== */
+.upcoming-events, .event-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.event-card {
+  background: linear-gradient(135deg, #cce0ff, #ffffff);
+  border-radius: 15px;
+  padding: 1rem;
+  flex: 1 1 calc(30% - 1rem);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: transform 0.4s, box-shadow 0.4s;
+  border-top: 5px solid #0a3d91;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.event-card h3 {
+  margin-bottom: 0.5rem;
+  color: #0a3d91;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+table th, table td {
+  padding: 0.75rem;
+  border: 1px solid #cce0ff;
+  text-align: left;
+}
+
+table th {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: #fff;
+  border-radius: 8px 8px 0 0;
+}
+
+table tr:nth-child(even) {
+  background-color: #e6f0ff;
+}
+
+/* ===== FORMS ===== */
+form {
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: auto;
+}
+
+.form-group {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  color: #0a3d91;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  border: 1px solid #4f7be1;
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: #0a3d91;
+  box-shadow: 0 0 10px rgba(10,61,145,0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 0.6rem 1.2rem;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #1e60d7, #0a3d91);
+  transform: scale(1.05);
+}
+
+/* ===== BUDGET RESULT ===== */
+#budget-result {
+  margin-top: 1rem;
+  text-align: center;
+  background: linear-gradient(135deg, #cce0ff, #e6f0ff);
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0a3d91;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: linear-gradient(135deg, #0a3d91, #4f7be1);
+  color: #fff;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 20px 20px 0 0;
+  text-align: center;
+}
+
+.footer-content a {
+  color: #fff;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: 0.3s;
+}
+
+.footer-content a:hover {
+  color: #cce0ff;
+  text-decoration: underline;
+}
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 1024px) {
+  .event-card {
+    flex: 1 1 calc(45% - 1rem);
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #main-navigation ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .event-card {
+    flex: 1 1 100%;
+  }
+
+  form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header .logo h1 {
+    font-size: 1.6rem;
+  }
+
+  button {
+    font-size: 0.95rem;
+  }
+}
