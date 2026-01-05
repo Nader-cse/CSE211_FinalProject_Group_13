@@ -1,6 +1,7 @@
 "use strict";
 
-class EventManager {
+class EventManager 
+{
   constructor(containerId) {
     this.container = document.getElementById(containerId);
     this.events = 
@@ -18,7 +19,8 @@ class EventManager {
     {
       const card = document.createElement("div");
       card.className = "event-card";
-      card.innerHTML = `
+      card.innerHTML = 
+      `
         <h3>${event.name}</h3>
         <p><strong>Date:</strong> ${event.date}</p>
         <p><strong>Location:</strong> ${event.location}</p>
@@ -96,7 +98,8 @@ class ParallaxController {
     if (this.section) window.addEventListener("scroll", this.handleScroll.bind(this));
   }
 
-  handleScroll() {
+  handleScroll()
+   {
     const offset = window.pageYOffset;
     this.section.style.backgroundPositionY = offset * 0.5 + "px";
   }
