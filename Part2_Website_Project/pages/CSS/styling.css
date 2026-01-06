@@ -384,7 +384,7 @@ footer a:hover {
 .video-wrapper {
   position: relative;
   width: 100%;
-  padding-top: 56.25%; /* 16:9 ratio */
+  padding-top: 7%; /* 16:9 ratio */
 }
 
 .video-wrapper iframe {
@@ -401,4 +401,41 @@ footer a:hover {
   font-size: 0.85rem;
   color: #666;
   text-align: center;
+}
+
+.photo-gallery {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.photo-gallery h3 {
+  color: #0a3d91;
+  margin-bottom: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 200px; /* Adjust size as needed */
+  height: 150px;
+  object-fit: cover; /* Keeps aspect ratio without stretching */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .gallery-container img {
+    width: 45%; /* Shows 2 photos per row on smaller screens */
+  }
 }
